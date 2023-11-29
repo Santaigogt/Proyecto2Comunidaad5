@@ -6,28 +6,28 @@ package categoria;
  */
 public class Categoria {
 
-    private String codigo;
-    private String nombre;
+    private String codigoCat;
+    private String nombreCat;
 
-    public String getCodigo() {
-        return codigo;
+    public String getCodigoCat() {
+        return codigoCat;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreCat() {
+        return nombreCat;
     }
 
     public Categoria(String codigo, String nombre) {
-        this.codigo = codigo;
-        this.nombre = nombre;
+        this.codigoCat = codigoCat;
+        this.nombreCat = nombreCat;
     }
 
     @Override
     public String toString() {
-        return "DefCategoria: Codigo: " + codigo + ", Nombre: " + nombre + ".";
+        return "DefCategoria: Codigo: " + codigoCat + ", Nombre: " + nombreCat + ".";
     }
 
     public boolean lleno() {
-        return !this.codigo.equals("") && !this.nombre.equals("");
+        return !this.codigoCat.equals("") && !this.nombreCat.equals("");
     }
 }

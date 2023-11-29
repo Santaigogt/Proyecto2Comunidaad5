@@ -4,23 +4,31 @@ package categoria;
  *
  * @author bizco
  */
-public class Pelicula {
+public class Pelicula extends CRUDCategoria {
 
-    private String codigo;
-    private String nombre;
-    private String categoria;
+    private String codigoPeli;
+    private String nombrePeli;
+    private Categoria categoria;
 
-    public String getCodigo() {
-        return codigo;
+    public String getCodigoPeli() {
+        return codigoPeli;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombrePeli() {
+        return nombrePeli;
     }
 
-    public Pelicula(String codigo, String nombre, String categoria) {
-        this.codigo = codigo;
-        this.nombre = nombre;
+    public Pelicula(String codigoPel, String nombrePeli, Categoria categoria, String codigoCat, String nombreCat) {
+        super(codigoCat, nombreCat);
+        this.codigoPeli = codigoPeli;
+        this.nombrePeli = nombrePeli;
         this.categoria = categoria;
     }
+        public Pelicula(String codigoPel, String nombrePeli, String codigoCat, String nombreCat) {
+        super(codigoCat, nombreCat);
+        this.codigoPeli = codigoPeli;
+        this.nombrePeli = nombrePeli;
+        this.categoria = categoria;
+    }
+
 }

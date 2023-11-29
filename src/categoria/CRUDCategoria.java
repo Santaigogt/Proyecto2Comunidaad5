@@ -6,20 +6,20 @@ public class CRUDCategoria extends Categoria {
 
     private HashMap<String, Categoria> DefCategorias;
 
-    public CRUDCategoria(String codigo, String nombre) {
-        super(codigo, nombre);
+    public CRUDCategoria(String codigoCat, String nombre) {
+        super(codigoCat, nombre);
         DefCategorias = new HashMap<>();
     }
 
     public void añadirCategoria(Categoria categoria) {
-        DefCategorias.put(categoria.getCodigo(), categoria);
+        DefCategorias.put(categoria.getCodigoCat(), categoria);
     }
 
-    public Categoria buscarCategoria(String codigo) {
-        return DefCategorias.get(codigo);
+    public Categoria buscarCategoria(String codigoCat) {
+        return DefCategorias.get(codigoCat);
     }
 
-    public void eliminarCategoria(String codigo) {
-        DefCategorias.remove(codigo);
+    public void eliminarCategoria(String codigoCat) {
+        DefCategorias.remove(codigoCat);
     }
 }

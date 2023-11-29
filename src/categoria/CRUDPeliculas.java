@@ -12,16 +12,16 @@ public class CRUDPeliculas {
     }
 
     public boolean agregarPelicula(Pelicula pelicula) {
-        if (buscarPelicula(pelicula.getCodigo()) != null) {
+        if (buscarPelicula(pelicula.getCodigoPeli()) != null) {
             return false;
         }
         peliculas.add(pelicula);
         return true;
     }
 
-    public Pelicula buscarPelicula(String codigo) {
+    public Pelicula buscarPelicula(String codigoPeli) {
         for (Pelicula pelicula : peliculas) {
-            if (pelicula.getCodigo().equals(codigo)) {
+            if (pelicula.getCodigoPeli().equals(codigoPeli)) {
                 return pelicula;
             }
         }
@@ -29,7 +29,7 @@ public class CRUDPeliculas {
     }
 
     public boolean actualizarPelicula(Pelicula peliculaActualizada) {
-        Pelicula peliculaExistente = buscarPelicula(peliculaActualizada.getCodigo());
+        Pelicula peliculaExistente = buscarPelicula(peliculaActualizada.getCodigoPeli());
         if (peliculaExistente != null) {
             peliculas.remove(peliculaExistente);
             peliculas.add(peliculaActualizada);
@@ -38,8 +38,8 @@ public class CRUDPeliculas {
         return false;
     }
 
-    public boolean eliminarPelicula(String codigo) {
-        Pelicula pelicula = buscarPelicula(codigo);
+    public boolean eliminarPelicula(String codigoPeli) {
+        Pelicula pelicula = buscarPelicula(codigoPeli);
         if (pelicula != null) {
             peliculas.remove(pelicula);
             return true;
@@ -50,4 +50,5 @@ public class CRUDPeliculas {
     public Set<Pelicula> obtenerTodasLasPeliculas() {
         return peliculas;
     }
+    
 }
