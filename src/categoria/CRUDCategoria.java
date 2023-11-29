@@ -21,5 +21,6 @@ public class CRUDCategoria extends Categoria {
 
     public void eliminarCategoria(String codigoCat) {
         DefCategorias.remove(codigoCat);
-    }
+    } 
+    
 }

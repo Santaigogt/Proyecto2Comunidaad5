@@ -9,6 +9,7 @@ public class Categoria {
     private String codigoCat;
     private String nombreCat;
 
+    
     public String getCodigoCat() {
         return codigoCat;
     }
