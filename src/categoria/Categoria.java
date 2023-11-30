@@ -9,10 +9,6 @@ public class Categoria {
     private String codigoCat;
     private String nombreCat;
 
-<<<<<<< Updated upstream
-=======
-    
->>>>>>> Stashed changes
     public String getCodigoCat() {
         return codigoCat;
     }

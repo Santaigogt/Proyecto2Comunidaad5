@@ -50,9 +50,5 @@ public class CRUDPeliculas {
     public Set<Pelicula> obtenerTodasLasPeliculas() {
         return peliculas;
     }
-    
-<<<<<<< Updated upstream
-=======
-    
->>>>>>> Stashed changes
+
 }
