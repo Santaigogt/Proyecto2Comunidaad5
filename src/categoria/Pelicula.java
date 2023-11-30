@@ -6,6 +6,7 @@ package categoria;
  */
 public class Pelicula extends CRUDCategoria {
 
+    
     private String codigoPeli;
     private String nombrePeli;
     private Categoria categoria;
