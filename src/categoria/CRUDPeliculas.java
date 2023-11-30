@@ -51,4 +51,8 @@ public class CRUDPeliculas {
         return peliculas;
     }
     
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
 }

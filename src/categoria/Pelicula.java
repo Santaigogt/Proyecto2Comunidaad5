@@ -6,6 +6,10 @@ package categoria;
  */
 public class Pelicula extends CRUDCategoria {
 
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
     private String codigoPeli;
     private String nombrePeli;
     private Categoria categoria;
